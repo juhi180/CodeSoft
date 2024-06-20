@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        .box {
+            height: 100vh;
+            background-color: black;
+
+            background-image: url("netflixpic.jpg");
+
+        }
+
+        .box2 {
+            height: 50vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav {
+            font-size: larger;
+            color: red;
+            height: 5vh;
+            text-align: left;
+        }
+
+        .net {
+            display: flex;
+        }
+
+        .right {
+            width: 9.25rem;
+            height: 2.5rem;
+            color: rgb(229, 9, 20);
+            display: block;
+            margin: 0px 157px;
+        }
+
+        .left {
+            width: 50%;
+            display: flex;
+            justify-content: end;
+            margin: 25px 142px 0px 0px;
+            /* padding: 1px 22px;
+            height: 132%;
+            margin: 3px 41px;
+            padding: 0px 20px;
+            height: 134%;
+            width: 18%; */
+        }
+
+        #lang {
+            padding: 1px 22px;
+            height: 132%;
+            margin: 3px 41px;
+            padding: 0px 20px;
+            height: 134%;
+            width: 18%;
+        }
+
+        .abc {
+            display: grid;
+            justify-items: center;
+            font-size: 4rem;
+            color: white;
+            margin: 200px 322px;
+
+        }
+
+        #ipt {
+            height: 6vh;
+            margin: -10px 462px;
+            width: 25vw;
+            padding: 6px 16px;
+
+        }
+
+        .jio {
+            display: flex;
+            margin: -126px -7px 0px -26px;
+            /* color: fieldtext !important; */
+        }
+
+        #ipl {
+            height: 8vh;
+            padding: 4px 34px;
+            width: 15vw;
+            background-color: red;
+            font-size: 1rem;
+            font-weight: 900;
+            color: rgb(255, 255, 255);
+            margin: -10px -457px;
+        }
+
+        .box3 {
+            height: 20vh;
+            width: 80vw;
+            color: white;
+            background: linear-gradient(93deg, #43172b, #230a25);
+            border-radius: 1rem;
+            box-sizing: border-box;
+            font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+            font-size: larger;
+
+
+        }
+
+        .tcs {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        footer {
+            height: 50vh;
+            background-color: black;
+        }
+
+        .pgs ul li {
+            list-style-type: none;
+            color: aliceblue;
+            line-height: 200%;
+
+        }
+
+        .pgs ul a {
+
+            color: aliceblue;
+
+        }
+
+        .f2 {
+            height: 8%;
+            width: 50%;
+            margin: 44px 98px;
+
+        }
+
+        .f3 {
+
+            color: white;
+            margin: -3px 139px;
+        }
+
+        .f4 {
+            color: white;
+            margin: -331px 114px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="netflixpic.html" alt="">
+
+        <header>
+            <nav>
+                <div class="net">
+
+                    <div class="right">
+                        <h1> NETFLIX </h1>
+                    </div>
+                    <div class="left">
+                        <select name="English" id="lang">
+                            <option value="English">English</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                        <input type="button" value="SignIn">
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+        <div class="abc">
+            <div class="watch">
+                <p>
+                    Unlimited movies,<br>
+                    Tv Shows and more.
+                </p>
+            </div>
+        </div>
+        <div class="jio">
+            <input type="text" id="ipt" placeholder="Email address">
+            <button id="ipl">Get Started></button>
+
+        </div>
+    </div>
+    <div class="box2">
+        <div class="box3">
+            <p>
+                Plans to suit your needs and your budget<br>
+
+                Enjoy Netflix starting at just ₹149.
+
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="tcs">
+            <div class="pgs">
+                <ul>
+                    <li><a href="#">Faq</a></li>
+                    <li><a href="#">Investor Relations</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Speed Test</a></li>
+                </ul>
+            </div>
+            <div class="pgs">
+                <ul>
+                    <li><a href="#"> Center</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#"> Preferences</a></li>
+                    <li><a href="#"> Notices</a< /li>
+                </ul>
+            </div>
+            <div class="pgs">
+                <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Ways To Watch</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                    <li><a href="#">Only On Netflix</a></li>
+                </ul>
+            </div>
+            <div class="pgs">
+                <ul>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+        <div class="f2">
+            <select name="English" id="lang">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+
+        </div>
+        <div class="f3">
+            <p>
+                Netflix India
+            </p>
+        </div>
+        <div class="f4">
+            Questions? Call 000-800-919-1694
+
+        </div>
+
+    </footer>
+</body>
+
+</html>

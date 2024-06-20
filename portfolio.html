@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juhi Arya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        ::-webkit-scrollbar{
+        width: 10px;
+        }
+        ::-webkit-scrollbar-track{
+            background-color: rgba(255,255,255,0.546);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: red;
+            border-radius: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* filter: drop-shadow(1px 1px 10px pink); */
+        }
+
+        header {
+            background-color: rgb(10, 2, 10);
+            height: 13vh;
+            width: 100vw;
+        }
+
+        .left {
+            color: White;
+            font-size: 2rem;
+            width: 25vw;
+        }
+
+        ul {
+            width: 50vw;
+        }
+
+        li {
+            color: white;
+            float: right;
+            list-style: none;
+            font-size: 2rem;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        li a{
+            color: white;
+            float: right;
+            list-style: none;
+            font-size: 2rem;
+            margin: 10px;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        ul li:hover{
+            font-size: 2.3rem;
+            
+        }
+
+        .main {
+            display: flex;
+            height: 85vh;
+            width: 100vw;
+            background: #261956;
+            color: rgb(222, 172, 223);
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .first {
+            /* display: flex; */
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+        }
+        .name{
+            color: rgb(17, 21, 235);
+            font-size: 3rem;
+            
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: drop-shadow(2px 2px 10px rgb(140, 216, 247));
+        }
+
+        .img img {
+            height: 45vh;
+            width: 30vw;
+            margin: 0px 0px 0px 0px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 16px rgb(0, 0, 0);
+        }
+    
+        .qualification {
+            /* background-color: #fff; */
+            height: 25vh;
+            display: flex;
+            /* color: white; */
+            background: black;
+            justify-content: space-between;
+        }
+
+
+        .first img {
+            height: 5vh;
+            width: 2.5vw;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .first img:hover{
+            height: 6vh;
+            width: 3vw;
+        }
+        .res {
+            height: 7vh;
+            width: 12vw;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            box-shadow: 5px 5px 10px;
+        }
+        .res:hover{
+          color: aqua;  
+            background-color: rgb(194, 51, 51); 
+        }
+        .box {
+            color: aqua;
+            background-color: brown;
+            height: 20vh;
+            width: 20vw;
+        }
+
+
+        h1 {
+            color: whitesmoke;
+            background-color: black;
+        }
+        #element{
+            color: rgb(74, 74, 246);
+
+        }
+
+
+        footer {
+            font-size: 2rem;
+            color: aqua;
+            background-color: black;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <h1>Juhi Arya </h1>
+            </div>
+            <ul>
+                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+                <li>Projects</li>
+                <li><a href="about.html" target="_blank">About</a></li>
+                <li>Home</li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <div class="first">
+            Hi There,I'm <span class="name">Juhi Arya</span> <br>
+            I desgin Thoughtfull digital experiences <br>
+            that are beautiful and enjoyable.<br>
+            I am a <span id="element"></span>
+            <br>
+            <img src="linkedin.jpg" alt="">
+            <img src="github.jpg" alt=""><br>
+            <button class="res" onclick="clicked()">Download Resume</button>
+        </div>
+
+        <div class="img">
+            <img src="girl.jpg" alt="Pic">
+        </div>
+
+    </section>
+
+
+    <hr>
+    <!-- <h1><br> Qualifications <br><br></h1>
+    <div class="qualification">
+        <div class="box">class 10</div>
+        <div class="box">class 12</div>
+        <div class="box">Bca</div>
+        <div class="box">Mca</div>
+    </div> -->
+    <footer>Thank You</footer>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed("#element", {
+    strings: [
+      "Web Developer",
+      "Web Designer",
+      "Java Programmer",
+      "Python Developer",
+    ],
+    typeSpeed: 50,
+    backSpeed: 50,
+    loop: true,
+  });
+  function clicked(){
+    confirm("Are you sure to download?")
+  }
+</script>
+</html>
